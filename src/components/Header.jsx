@@ -1,8 +1,21 @@
 export default function Header() {
+  function handleCTAClick() {
+    const section3 = document.querySelector("#section-3");
+
+    if (section3 && section3 instanceof HTMLElement) {
+      window.scrollTo({
+        top: section3.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }
+
   return (
     <div style={styles.wrapper}>
       <h1 style={styles.title}>{"Seja bem vindo ao front school"}</h1>
-      <button style={styles.button}>Ir para a seção 2</button>
+      <button style={styles.button} onClick={handleCTAClick}>
+        Ir para a seção 2
+      </button>
     </div>
   );
 }
