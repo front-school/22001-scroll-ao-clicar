@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <Header />
       <Section backgroundColor="#12263a" title="Section 2" />
-      <Section backgroundColor="#06bcc1" title="Section 3" />
+      <Section backgroundColor="#12263a" title="Section 4" />
+      <Section backgroundColor="#12263a" title="Section 4" />
+      <Section backgroundColor="#06bcc1" title="Section 3" id={"section-3"} />
       <Section backgroundColor="#12263a" title="Section 4" />
     </div>
   );

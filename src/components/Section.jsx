@@ -1,9 +1,10 @@
 export default function Section({
   backgroundColor = "#fff",
   title = "Section",
+  id,
 }) {
   return (
-    <div style={styles.wrapper(backgroundColor)}>
+    <div style={styles.wrapper(backgroundColor)} id={id}>
       <h1 style={styles.title}>{title}</h1>
     </div>
   );
